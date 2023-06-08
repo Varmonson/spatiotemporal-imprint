@@ -21,3 +21,7 @@
     <li> is-job </li>
         任务调度服务
 </ul>
+
+## 系统架构设计图
+
+![系统架构设计图](./resources/system-framework-design.jpg)
