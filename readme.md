@@ -3,24 +3,30 @@
 
 ## 服务列表
 
-<ul>
-    <li> si-framework </li>
-        基础框架
-    <li> si-utils </li>
-        工具类
-    <li> si-gateway </li>
-        网关服务,请求统一入口
-    <li> si-auth </li>
-        认证中心，统一权限认证
-    <li> si-member </li>
-        会员中心，用户管理和角色管理
-    <li> si-resource-library </li>
-        资源库，图片、视频、文本管理
-    <li> si-mq </li>
-        消息中心,接收异步消息通知
-    <li> si-job </li>
-        任务调度服务
-</ul>
+- si-framework 
+  基础框架 
+- si-utils 
+  工具类
+- si-gateway
+  网关服务,请求统一入口
+- si-auth
+  认证中心，统一权限认证
+- si-member
+  会员中心，用户管理和角色管理 
+- si-resource-library 
+  资源库，图片、视频、文本管理
+- si-mq 
+  消息中心,接收异步消息通知
+- si-job 
+  任务调度服务
+
+- todo:actuator
+
+## 后端技术栈
+- Spring Cloud  Greenwich.SR6
+- Spring Cloud Gateway
+- Spring Cloud Alibaba  2.1.0.RELEASE
+
 
 ## 系统架构设计图
 

@@ -1,0 +1,26 @@
+server:
+  port: 7001
+spring:
+  application:
+    name: si-gateway  # 服务名
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1
+        namespace: 843bddf3-9725-444d-83a5-edda1c4f1428
+        file-extension: yml # 指定nacos读取配置文件后缀名
+      discovery:
+        server-addr: 127.0.0.1
+        namespace: 843bddf3-9725-444d-83a5-edda1c4f1428
+    gateway:
+#      default-filters:
+#        -
+      discovery:
+        locator:
+          enabled: true  # 开启服务发现路由配置
+      routes:
+        - id: si-member  # 服务名
+          uri: lb://si-member  # 开启服务发现之后uri格式为lb://serviceId
+          predicates:
+            - Path=/si/member/**
+

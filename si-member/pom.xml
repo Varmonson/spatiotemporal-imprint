@@ -9,8 +9,37 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <si.framework.version>1.0.0-SNAPSHOT</si.framework.version>
+        <nacos.config.version>2.1.0.RELEASE</nacos.config.version>
+        <nacos.discovry.version>2.1.0.RELEASE</nacos.discovry.version>
     </properties>
+
+    <parent>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-parent</artifactId>
+        <version>Greenwich.SR6</version>
+    </parent>
+
+    <dependencies>
+        <!-- framework -->
+        <dependency>
+            <groupId>com.soulyun</groupId>
+            <artifactId>si-framework</artifactId>
+            <version>${si.framework.version}</version>
+        </dependency>
+
+        <!-- nacos -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <version>${nacos.config.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+            <version>${nacos.discovry.version}</version>
+        </dependency>
+
+    </dependencies>
 
 </project>
